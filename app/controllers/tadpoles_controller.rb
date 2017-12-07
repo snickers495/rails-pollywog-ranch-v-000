@@ -41,7 +41,7 @@ class TadpolesController < ApplicationController
   end
 
   def metamorphosize
-
+    frog = Frog.create(name: @tadpole.name, color: @tadpole.color, pond: @tadpole.pond)
   end
 
   def destroy
