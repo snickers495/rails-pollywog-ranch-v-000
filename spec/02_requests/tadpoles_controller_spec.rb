@@ -28,7 +28,7 @@ describe TadpolesController, :type => :request  do
 
     it "redirects to the newly made frog's show page" do
       new_frog_id = Frog.last.id + 1
-      post "/tadpoles/#{@tadpole.id}/metamorphose"
+      post "/tadpoles/#{@tadpole.id}/metamorphosize"
       expect(response).to redirect_to("/frogs/#{new_frog_id}")
     end
   end
