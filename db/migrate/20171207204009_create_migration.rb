@@ -1,6 +1,6 @@
 class CreateMigration < ActiveRecord::Migration
   def change
-    create_table :migrations do |t|
-    end
+    add_column :frogs, :pond_id, :integer
+    add_column :tadpoles, :frog_id, :integer
   end
 end
